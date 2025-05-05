@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santu Saha - Portfolio</title>
+    <title>Santu Saha - Accountant | Developer | Analyst</title>
+    <meta name="description" content="Portfolio of Santu Saha, showcasing expertise in Accounting, GST, Financial Analysis, Web Development, and Data Analysis.">
+    <meta name="author" content="Santu Saha">
+    <meta name="keywords" content="Santu Saha, Accountant, GST Specialist, Web Developer, Data Analyst, Financial Analysis, Siliguri, Portfolio">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <!-- Optional: Update path if needed -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <!-- Optional: Update path if needed -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- Optional: Update path if needed -->
+    <link rel="manifest" href="/site.webmanifest"> <!-- Optional: Update path if needed -->
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS (Link last) -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <!-- Preloader (Element added by script.js) -->
+    <!-- Custom Cursor (Element added by script.js) -->
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Santu Saha</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#home">Santu Saha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#methodology">Work Approach</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#methodology">Approach</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#coding">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#coding">Coding</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -39,109 +58,93 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section d-flex align-items-center">
         <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center" data-aos="fade-up">
                     <div class="hero-content">
-                        <h1 class="display-4 mb-4">Hi, I'm Santu Saha</h1>
-                        <div class="highlight-box mb-4">
-                            <h2 class="typed-text"></h2>
-                            <p class="lead">Professional Accountant & Financial Expert</p>
+                        <h1 class="display-3 mb-3 fw-bold">Hi, I'm Santu Saha</h1>
+                        <div class="highlight-box mb-4 mx-auto" style="max-width: 700px;">
+                            <h2 class="typed-text mb-2"></h2> <!-- Typed.js populates this -->
+                            <p class="lead mb-0">Blending financial acumen with technical proficiency.</p>
                         </div>
-                        <div class="expertise-grid">
+                        <!-- Expertise Grid -->
+                         <div class="expertise-grid mb-5">
                             <div class="expertise-item" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="expertise-icon">
-                                    <i class="fas fa-calculator fa-2x"></i>
+                                    <i class="fas fa-calculator fa-fw"></i> <!-- Added fa-fw for fixed width -->
                                 </div>
                                 <h3>GST Expert</h3>
-                                <div class="expertise-bar"></div>
                             </div>
                             <div class="expertise-item" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="expertise-icon">
-                                    <i class="fas fa-chart-line fa-2x"></i>
+                                    <i class="fas fa-chart-line fa-fw"></i>
                                 </div>
                                 <h3>Financial Analysis</h3>
-                                <div class="expertise-bar"></div>
                             </div>
                             <div class="expertise-item" data-aos="zoom-in" data-aos-delay="300">
                                 <div class="expertise-icon">
-                                    <i class="fas fa-code fa-2x"></i>
+                                    <i class="fas fa-code fa-fw"></i>
                                 </div>
                                 <h3>Web Development</h3>
-                                <div class="expertise-bar"></div>
                             </div>
                             <div class="expertise-item" data-aos="zoom-in" data-aos-delay="400">
                                 <div class="expertise-icon">
-                                    <i class="fas fa-database fa-2x"></i>
+                                    <i class="fas fa-database fa-fw"></i>
                                 </div>
                                 <h3>Data Analytics</h3>
-                                <div class="expertise-bar"></div>
                             </div>
                         </div>
-                        <div class="hero-buttons mt-5">
-                            <a href="SANTU.PDF" class="btn btn-primary btn-lg me-3" download>
-                                <i class="fas fa-download me-2"></i>Download CV
+                        <div class="hero-buttons mt-4 mb-5">
+                            <!-- IMPORTANT: Make sure SANTU.PDF is in the same folder as index.html -->
+                            <a href="SANTU.PDF" class="btn btn-primary btn-lg me-lg-3 mb-3 mb-lg-0" download>
+                                <i class="fas fa-download fa-fw"></i>Download CV
                             </a>
-                            <a href="#contact" class="btn btn-outline-light btn-lg">
-                                <i class="fas fa-envelope me-2"></i>Contact Me
+                            <a href="#contact" class="btn btn-outline-light btn-lg mb-3 mb-lg-0">
+                                <i class="fas fa-paper-plane fa-fw"></i>Let's Connect
                             </a>
                         </div>
-                        <div class="professional-highlights mt-4">
-                            <div class="highlight-item">
-                                <i class="fas fa-briefcase"></i>
+                         <!-- Professional Highlights -->
+                        <div class="professional-highlights justify-content-center mb-5">
+                            <div class="highlight-item" data-aos="fade-up" data-aos-delay="500">
+                                <i class="fas fa-briefcase fa-fw"></i>
                                 <span>5+ Years Experience</span>
                             </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-certificate"></i>
+                            <div class="highlight-item" data-aos="fade-up" data-aos-delay="600">
+                                <i class="fas fa-certificate fa-fw"></i>
                                 <span>6+ Certifications</span>
                             </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-project-diagram"></i>
+                            <div class="highlight-item" data-aos="fade-up" data-aos-delay="700">
+                                <i class="fas fa-project-diagram fa-fw"></i>
                                 <span>10+ Projects</span>
                             </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-users"></i>
-                                <span>50+ Clients</span>
+                             <div class="highlight-item" data-aos="fade-up" data-aos-delay="800">
+                                <i class="fas fa-users fa-fw"></i>
+                                <span>50+ Clients Served</span>
                             </div>
                         </div>
-                        <div class="social-links mt-4">
-                            <a href="https://linkedin.com/in/santubittu" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
+                        <!-- Social Links Section -->
+                        <div class="social-links-section mt-4">
+                            <a href="https://linkedin.com/in/santubittu" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn Profile" title="LinkedIn">
+                                <i class="fab fa-linkedin fa-fw"></i>
+                                <span class="tooltip-text">LinkedIn</span>
                             </a>
-                            <a href="https://quora.com/profile/Bittu-Saha-42" target="_blank" class="social-link">
-                                <i class="fab fa-quora"></i>
-                                <span>Quora</span>
+                             <a href="https://github.com/santubittu" target="_blank" rel="noopener noreferrer" class="social-link github" aria-label="GitHub Profile" title="GitHub">
+                                <i class="fab fa-github fa-fw"></i>
+                                 <span class="tooltip-text">GitHub</span>
                             </a>
-                            <a href="https://santubittu.medium.com" target="_blank" class="social-link">
-                                <i class="fab fa-medium"></i>
-                                <span>Medium</span>
+                             <a href="https://kaggle.com/digitalbloger" target="_blank" rel="noopener noreferrer" class="social-link kaggle" aria-label="Kaggle Profile" title="Kaggle">
+                                <i class="fab fa-kaggle fa-fw"></i>
+                                 <span class="tooltip-text">Kaggle</span>
                             </a>
-                            <a href="https://github.com/santubittu" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
+                            <a href="https://quora.com/profile/Bittu-Saha-42" target="_blank" rel="noopener noreferrer" class="social-link quora" aria-label="Quora Profile" title="Quora">
+                                <i class="fab fa-quora fa-fw"></i>
+                                 <span class="tooltip-text">Quora</span>
                             </a>
-                        </div>
-                    </div>
-                    <div class="hero-skills mt-4">
-                        <div class="skill-tag-container">
-                            <div class="skill-tag">
-                                <i class="fas fa-calculator"></i>
-                                <span>GST Expert</span>
-                            </div>
-                            <div class="skill-tag">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Financial Analysis</span>
-                            </div>
-                            <div class="skill-tag">
-                                <i class="fas fa-code"></i>
-                                <span>Web Development</span>
-                            </div>
-                            <div class="skill-tag">
-                                <i class="fas fa-database"></i>
-                                <span>Data Analytics</span>
-                            </div>
+                            <a href="https://santubittu.medium.com" target="_blank" rel="noopener noreferrer" class="social-link medium" aria-label="Medium Profile" title="Medium">
+                                <i class="fab fa-medium fa-fw"></i>
+                                 <span class="tooltip-text">Medium</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -153,36 +156,39 @@
     <section id="about" class="section-padding">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
                     <p class="about-text">
-                        I am a dedicated accountant with expertise in GST, Income Tax, and financial management. Born on October 22, 1999, I bring fresh perspectives and modern approaches to accounting practices while maintaining accuracy and compliance.
+                        I am a dedicated and detail-oriented accountant with <strong>5+ years of experience</strong>, specializing in GST compliance, Income Tax preparation, and comprehensive financial management. Born on October 22, 1999, I blend traditional accounting principles with modern technological solutions, including web development and data analysis, to provide efficient and accurate financial services.
                     </p>
-                    <div class="personal-info">
-                        <p><i class="fas fa-envelope"></i> santubittuslg@gmail.com</p>
-                        <p><i class="fas fa-phone"></i> +91 8900499532</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Ambikanagar Road No 2, Near Chot Pukur Ghat, Siliguri, India</p>
+                    <p class="about-text">
+                        My passion lies in leveraging technology to streamline financial processes and derive meaningful insights from data, helping businesses make informed decisions. I am a continuous learner, always exploring new tools and techniques in finance and tech.
+                    </p>
+                    <div class="personal-info mt-4">
+                        <p><i class="fas fa-envelope fa-fw"></i> <a href="mailto:santubittuslg@gmail.com">santubittuslg@gmail.com</a></p>
+                        <p><i class="fas fa-phone fa-fw"></i> <a href="tel:+918900499532">+91 8900499532</a></p>
+                        <p><i class="fas fa-map-marker-alt fa-fw"></i> <span>Ambikanagar Rd No 2, Nr Chot Pukur Ghat, Siliguri, India</span></p> <!-- Wrap text in span for alignment consistency -->
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
                     <div class="skills-container">
-                        <h3>Language Proficiency</h3>
+                        <h3 class="text-center mb-4 h4">Language Proficiency</h3> <!-- Made heading smaller -->
                         <div class="language-skill">
-                            <span>Bengali</span>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 100%"></div>
+                            <span>Bengali (Native)</span>
+                            <div class="progress" role="progressbar" aria-label="Bengali proficiency 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" data-width="100%">100%</div>
                             </div>
                         </div>
                         <div class="language-skill">
-                            <span>English</span>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%"></div>
+                            <span>English (Professional)</span>
+                            <div class="progress" role="progressbar" aria-label="English proficiency 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" data-width="90%">90%</div>
                             </div>
                         </div>
                         <div class="language-skill">
-                            <span>Hindi</span>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%"></div>
+                            <span>Hindi (Conversational)</span>
+                            <div class="progress" role="progressbar" aria-label="Hindi proficiency 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" data-width="75%">75%</div>
                             </div>
                         </div>
                     </div>
@@ -196,49 +202,59 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
             <div class="timeline">
+                <!-- Current Position -->
                 <div class="timeline-item current" data-aos="fade-up">
+                    <!-- Icon MUST be before content -->
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase fa-fw"></i>
+                    </div>
                     <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="current-badge">Current Position</div>
-                        <h3>Agarwal Mittal & Co</h3>
+                        <div class="current-badge">Current</div>
+                        <h3 class="company-name">Agarwal Mittal & Co</h3>
                         <p class="timeline-title">Accountant</p>
+                        <span class="timeline-period"><i class="fas fa-calendar-alt fa-fw me-1"></i> Nov 2021 - Present</span> <!-- Added me-1 for tiny space -->
                         <ul>
-                            <li>Financial Statement Preparation</li>
-                            <li>GST Returns and Compliance</li>
-                            <li>Income Tax Filing</li>
-                            <li>Bookkeeping and Reconciliation</li>
+                            <li>Preparing and finalizing financial statements (Balance Sheet, P&L).</li>
+                            <li>Managing comprehensive GST returns (GSTR-1, 3B, 9, 9C) and compliance.</li>
+                            <li>Handling Income Tax Return (ITR) filing for individuals and businesses.</li>
+                            <li>Overseeing bookkeeping, bank reconciliation, and accounts payable/receivable.</li>
+                            <li>Implementing process improvements using Excel automation and Tally features.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item" data-aos="fade-up">
+                 <!-- Past Position 1 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                     <div class="timeline-icon">
+                         <i class="fas fa-hospital-user fa-fw"></i>
+                     </div>
                     <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-hospital"></i>
-                        </div>
-                        <h3>Siliguri Greater Lions Eye Hospital</h3>
+                        <h3 class="company-name">Siliguri Greater Lions Eye Hospital</h3>
                         <p class="timeline-title">Accountant</p>
+                        <span class="timeline-period"><i class="fas fa-calendar-alt fa-fw me-1"></i> Feb 2020 - Oct 2021</span>
                         <ul>
-                            <li>Vendor Payment Management</li>
-                            <li>Banking and Salary Processing</li>
-                            <li>GST Entry for Medicine/Optical</li>
-                            <li>Vision Center Expenses Management</li>
+                            <li>Managed vendor payments, ensuring accuracy and timeliness.</li>
+                            <li>Processed payroll and handled all banking transactions.</li>
+                            <li>Recorded and reconciled GST entries for medicine and optical sales.</li>
+                            <li>Tracked and managed expenses for multiple Vision Centers.</li>
+                            <li>Contributed to budget monitoring and variance analysis.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item" data-aos="fade-up">
+                 <!-- Past Position 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                     <div class="timeline-icon">
+                         <i class="fas fa-balance-scale-left fa-fw"></i>
+                     </div>
                     <div class="timeline-content">
-                        <div class="timeline-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <h3>Advocate Firm</h3>
+                        <h3 class="company-name">Advocate Firm (CA Practice)</h3>
                         <p class="timeline-title">Accountant</p>
+                         <span class="timeline-period"><i class="fas fa-calendar-alt fa-fw me-1"></i> Apr 2019 - Jan 2020</span>
                         <ul>
-                            <li>GST Returns and Annual Returns</li>
-                            <li>Account Finalization and Income Tax Returns</li>
-                            <li>Trade Licenses, PF/ESI Returns</li>
-                            <li>Balance Sheet and P&L Preparation</li>
+                            <li>Filed GST returns (monthly/quarterly) and prepared annual returns (GSTR-9/9C).</li>
+                            <li>Assisted in account finalization and ITR filing for diverse clients.</li>
+                            <li>Managed compliance for Trade Licenses, PF, and ESI returns.</li>
+                            <li>Prepared Balance Sheets, Profit & Loss statements, and supporting schedules.</li>
+                            <li>Provided client support for accounting and tax queries.</li>
                         </ul>
                     </div>
                 </div>
@@ -246,68 +262,183 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section-padding">
+     <!-- Work Methodology Section -->
+    <section id="methodology" class="section-padding">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Professional Skills</h2>
-            <div class="row">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="skill-card">
-                        <i class="fas fa-calculator"></i>
-                        <h3>Accounting</h3>
+            <h2 class="section-title" data-aos="fade-up">My Work Approach</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="methodology-card h-100">
+                        <div class="methodology-icon">
+                            <i class="fas fa-tasks fa-fw"></i>
+                        </div>
+                        <h3>Accuracy & Compliance</h3>
                         <ul>
-                            <li>Tally ERP 9</li>
-                            <li>Account Finalization</li>
-                            <li>GST Returns</li>
+                            <li>Systematic bookkeeping with daily/weekly reconciliations.</li>
+                            <li>Strict adherence to accounting standards and tax regulations.</li>
+                            <li>Regular review and verification of financial data integrity.</li>
+                            <li>Proactive monitoring of compliance deadlines.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-card">
-                        <i class="fas fa-laptop"></i>
-                        <h3>Digital Skills</h3>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="methodology-card h-100">
+                        <div class="methodology-icon">
+                            <i class="fas fa-laptop-code fa-fw"></i>
+                        </div>
+                        <h3>Technology Integration</h3>
                         <ul>
-                            <li>MS Office Suite</li>
-                            <li>Digital Marketing</li>
-                            <li>Data Entry</li>
+                            <li>Automating repetitive tasks using Excel Macros & Python.</li>
+                            <li>Utilizing cloud accounting software for real-time access.</li>
+                            <li>Developing custom tools (like invoice generators) for efficiency.</li>
+                            <li>Applying data analytics for insightful financial reporting.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Financial Markets</h3>
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="methodology-card h-100">
+                        <div class="methodology-icon">
+                            <i class="fas fa-comments fa-fw"></i>
+                        </div>
+                        <h3>Client Focus</h3>
                         <ul>
-                            <li>Stock Market Analysis</li>
-                            <li>Trading</li>
-                            <li>Market Research</li>
+                            <li>Clear and timely communication on financial matters.</li>
+                            <li>Understanding client needs to provide tailored solutions.</li>
+                            <li>Providing actionable insights, not just numbers.</li>
+                            <li>Maintaining confidentiality and ethical standards.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Core Skills</h2>
+            <div class="row g-4">
+                 <!-- Accounting & Finance -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="skill-card h-100">
+                        <i class="fas fa-calculator fa-fw skill-icon"></i> <!-- Added skill-icon class -->
+                        <h3>Accounting & Finance</h3>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Tally ERP 9 & Prime</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Account Finalization</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>GST & Income Tax Compliance</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Bookkeeping & Reconciliation</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Financial Statement Prep</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>PF / ESI Returns</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Technical & Digital -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card h-100">
+                        <i class="fas fa-laptop-code fa-fw skill-icon"></i>
+                        <h3>Technical & Digital</h3>
+                         <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>MS Office Suite (Adv. Excel)</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>HTML, CSS, JavaScript</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Python (Pandas, NumPy)</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Data Analysis & Visualization</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Basic Digital Marketing (SEO/SEM)</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Google Sheets Automation</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Analytical & Soft Skills -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card h-100">
+                        <i class="fas fa-chart-bar fa-fw skill-icon"></i>
+                        <h3>Analytical & Soft Skills</h3>
+                         <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Stock Market Analysis (NISM)</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Problem-Solving</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Attention to Detail</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Time Management</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Communication (Verbal & Written)</li>
+                            <li><i class="fas fa-check-circle text-success fa-fw me-2"></i>Strategic Planning (LinkedIn)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Projects Section -->
+    <section id="coding" class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Personal Projects</h2>
+            <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-8 text-center">
+                    <p class="lead">
+                        Bridging finance and technology through practical applications. Here are some projects showcasing my coding and data analysis skills applied to real-world scenarios.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1: Zomato EDA -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card h-100">
+                        <i class="fab fa-python fa-fw project-icon"></i>
+                        <h4>Zomato Data Analysis</h4>
+                        <p>Performed Exploratory Data Analysis (EDA) on the Zomato dataset using Python (Pandas, Matplotlib, Seaborn) to uncover insights about restaurant trends, ratings, and locations.</p>
+                        <a href="https://www.kaggle.com/code/digitalbloger/zomato-py-eda-santu" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-auto project-link">
+                            View on Kaggle <i class="fas fa-external-link-alt fa-fw ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2: Invoice Generator -->
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card h-100">
+                        <i class="fas fa-file-invoice-dollar fa-fw project-icon"></i>
+                        <h4>Online GST Invoice Generator</h4>
+                        <p>Developed a web application using HTML, CSS, and JavaScript to enable users to quickly create, preview, print, and download GST-compliant invoices.</p>
+                        <a href="https://gstinvoiceonline-santubittus-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-auto project-link">
+                            Visit Website <i class="fas fa-external-link-alt fa-fw ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3: GSTR-2B Reconciliation -->
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card h-100">
+                        <i class="fas fa-sync-alt fa-fw project-icon"></i>
+                        <h4>GSTR-2B vs Books Reconciliation</h4>
+                        <p>Created an automated Google Sheet template using formulas and conditional formatting to simplify and speed up the reconciliation between GSTR-2B and purchase records.</p>
+                        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUpnfXSACVx5VhGEYjI4-65s7GRDSQZm0xtqTVOF0LBEaUbKR_HDUzYWMuW2fe771c36Ws3kK1tyhw/pubhtml" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm mt-auto project-link">
+                            View Template <i class="fas fa-external-link-alt fa-fw ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Education Section -->
     <section id="education" class="section-padding bg-light">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Education</h2>
-            <div class="row">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="education-card">
-                        <h3>BCOM General</h3>
-                        <p class="institution">IGNOU</p>
-                        <p class="year">2019 - 2022</p>
-                        <p class="location">SILIGURI</p>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-5" data-aos="fade-right">
+                    <div class="education-card h-100">
+                        <i class="fas fa-graduation-cap fa-fw education-icon"></i>
+                        <h3>Bachelor of Commerce (B.Com)</h3>
+                        <p class="institution">Indira Gandhi National Open University (IGNOU)</p>
+                        <p><i class="fas fa-calendar-alt fa-fw me-1"></i>2019 - 2022</p>
+                        <p><i class="fas fa-map-marker-alt fa-fw me-1"></i>Siliguri Center</p>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <div class="education-card">
-                        <h3>Higher Secondary Education</h3>
-                        <p class="institution">West Bengal Board</p>
-                        <p class="year">2017</p>
-                        <p class="location">Siliguri</p>
-                        <p class="stream">Commerce</p>
+                <div class="col-md-6 col-lg-5" data-aos="fade-left">
+                    <div class="education-card h-100">
+                         <i class="fas fa-school fa-fw education-icon"></i>
+                        <h3>Higher Secondary (Commerce)</h3>
+                        <p class="institution">West Bengal Council of Higher Secondary Education (WBCHSE)</p>
+                         <p><i class="fas fa-calendar-alt fa-fw me-1"></i>Completed 2017</p>
+                         <p><i class="fas fa-map-marker-alt fa-fw me-1"></i>Tarai Tarapada Adarsha Vidalaya</p>
                     </div>
                 </div>
             </div>
@@ -317,290 +448,196 @@
     <!-- Certificates Section -->
     <section id="certificates" class="section-padding">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Certificates & Technical Skills</h2>
-            <div class="row">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="certificate-card">
-                        <i class="fas fa-certificate"></i>
+            <h2 class="section-title" data-aos="fade-up">Certificates & Training</h2>
+            <div class="row g-4">
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="certificate-card h-100">
+                        <div class="certificate-icon-wrapper"><i class="fas fa-certificate fa-fw"></i></div>
                         <h3>Digital Marketing</h3>
                         <p class="certificate-details">The Fundamentals Of Digital Marketing</p>
-                        <div class="certificate-badge">
-                            <i class="fas fa-award"></i>
-                        </div>
+                        <span class="certificate-issuer">Issuer: Google Digital Garage</span>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="certificate-card">
-                        <i class="fas fa-chart-line"></i>
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                     <div class="certificate-card h-100">
+                        <div class="certificate-icon-wrapper"><i class="fas fa-chart-line fa-fw"></i></div>
                         <h3>Financial Markets</h3>
-                        <p class="certificate-details">NISM XV Research Analysis & NISM Investor Certificate</p>
-                        <div class="certificate-badge">
-                            <i class="fas fa-award"></i>
-                        </div>
+                        <p class="certificate-details">NISM Series XV: Research Analyst & NISM Investor Education</p>
+                         <span class="certificate-issuer">Issuer: NISM (SEBI)</span>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="certificate-card">
-                        <i class="fas fa-database"></i>
-                        <h3>Data Management</h3>
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certificate-card h-100">
+                        <div class="certificate-icon-wrapper"><i class="fas fa-keyboard fa-fw"></i></div>
+                        <h3>Data Entry</h3>
                         <p class="certificate-details">Domestic Data Entry Operator</p>
-                        <div class="certificate-badge">
-                            <i class="fas fa-award"></i>
-                        </div>
+                        <span class="certificate-issuer">Issuer: NSDC (Skill India)</span>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="certificate-card">
-                        <i class="fas fa-chart-bar"></i>
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certificate-card h-100">
+                        <div class="certificate-icon-wrapper"><i class="fas fa-chart-pie fa-fw"></i></div>
                         <h3>Data Visualization</h3>
                         <p class="certificate-details">Power BI & Advanced Excel</p>
-                        <div class="certificate-badge">
-                            <i class="fas fa-award"></i>
-                        </div>
+                        <span class="certificate-issuer">Issuer: Various Workshops</span>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="certificate-card">
-                        <i class="fas fa-calculator"></i>
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="certificate-card h-100">
+                         <div class="certificate-icon-wrapper"><i class="fas fa-percent fa-fw"></i></div>
                         <h3>Taxation</h3>
                         <p class="certificate-details">Fundamentals of Taxation</p>
-                        <div class="certificate-badge">
-                            <i class="fas fa-award"></i>
-                        </div>
+                         <span class="certificate-issuer">Issuer: Online Learning Platform</span>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="certificate-card">
-                        <i class="fas fa-lightbulb"></i>
+                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="certificate-card h-100">
+                        <div class="certificate-icon-wrapper"><i class="fas fa-lightbulb fa-fw"></i></div>
                         <h3>Strategic Planning</h3>
-                        <p class="certificate-details">Strategic Planning Foundations - LinkedIn</p>
-                        <div class="certificate-badge">
-                            <i class="fas fa-award"></i>
-                        </div>
+                        <p class="certificate-details">Strategic Planning Foundations</p>
+                        <span class="certificate-issuer">Issuer: LinkedIn Learning</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Technical Skills Showcase -->
-            <div class="technical-skills mt-5">
-                <h3 class="text-center mb-4" data-aos="fade-up">Technical Expertise</h3>
-                <div class="row">
-                    <div class="col-md-6" data-aos="fade-right">
+             <!-- Technical Skills Showcase -->
+            <div class="technical-skills mt-5 pt-5 border-top">
+                <h3 class="text-center mb-4" data-aos="fade-up">Technology Stack</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
                         <div class="tech-stack-card">
-                            <h4><i class="fab fa-github"></i> Development</h4>
-                            <div class="tech-stack-content">
-                                <a href="https://github.com/santubittu" target="_blank" class="github-link">
-                                    <i class="fab fa-github"></i> @santubittu
-                                </a>
-                                <div class="tech-badges">
-                                    <span class="tech-badge">HTML5</span>
-                                    <span class="tech-badge">CSS3</span>
-                                    <span class="tech-badge">JavaScript</span>
-                                    <span class="tech-badge">Bootstrap</span>
-                                </div>
+                             <h4 class="d-none d-md-flex"><i class="fas fa-tools fa-fw me-2"></i>Tools & Technologies</h4> <!-- Hide on smaller screens if needed -->
+                            <div class="tech-badges">
+                                <span class="tech-badge html">HTML5</span>
+                                <span class="tech-badge css">CSS3</span>
+                                <span class="tech-badge js">JavaScript</span>
+                                <span class="tech-badge bootstrap">Bootstrap</span>
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge pandas">Pandas</span>
+                                <span class="tech-badge excel">Advanced Excel</span>
+                                <span class="tech-badge powerbi">Power BI</span>
+                                <span class="tech-badge tally">Tally ERP/Prime</span>
+                                <span class="tech-badge gsheets">Google Sheets</span>
+                                <span class="tech-badge git">Git/GitHub</span>
+                                <span class="tech-badge ai">AI Tools</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6" data-aos="fade-left">
-                        <div class="tech-stack-card">
-                            <h4><i class="fas fa-robot"></i> AI & Automation</h4>
-                            <div class="tech-stack-content">
-                                <div class="tech-badges">
-                                    <span class="tech-badge">ChatGPT</span>
-                                    <span class="tech-badge">AI Tools</span>
-                                    <span class="tech-badge">Automation</span>
-                                    <span class="tech-badge">Data Analysis</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Methodology Section -->
-    <section id="methodology" class="section-padding">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">My Work Approach</h2>
-            <div class="row">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="methodology-card">
-                        <div class="methodology-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <h3>Financial Management</h3>
-                        <ul>
-                            <li>Systematic approach to bookkeeping with daily reconciliation</li>
-                            <li>Regular backup and verification of financial data</li>
-                            <li>Proactive tax planning and compliance monitoring</li>
-                            <li>Implementation of internal control systems</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <div class="methodology-card">
-                        <div class="methodology-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Technology Integration</h3>
-                        <ul>
-                            <li>Automation of repetitive tasks using Excel macros</li>
-                            <li>Implementation of digital filing systems</li>
-                            <li>Use of cloud-based accounting software</li>
-                            <li>Data analytics for financial reporting</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coding Journey Section -->
-    <section id="coding" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">My Coding Journey</h2>
-            <div class="row">
-                <div class="col-lg-12" data-aos="fade-up">
-                    <div class="coding-story">
-                        <p class="lead">
-                            As an accountant who loves coding, I blend financial expertise with technical skills to create efficient solutions.
-                            My journey into coding started with automating Excel tasks and has evolved into web development and data analysis.
-                        </p>
-                        <div class="coding-projects mt-4">
-                            <h3>Personal Projects</h3>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="project-card">
-                                        <i class="fas fa-calculator"></i>
-                                        <h4>GST Calculator App</h4>
-                                        <p>A web-based tool for quick GST calculations and invoice generation</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="project-card">
-                                        <i class="fas fa-file-invoice"></i>
-                                        <h4>Invoice Automation</h4>
-                                        <p>Python script for automated invoice processing and categorization</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="project-card">
-                                        <i class="fas fa-chart-pie"></i>
-                                        <h4>Financial Dashboard</h4>
-                                        <p>Interactive dashboard for financial data visualization</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="section-padding">
+    <section id="faq" class="section-padding bg-light">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
                     <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item" data-aos="fade-up">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    How do you handle complex GST scenarios?
+                        <!-- FAQ 1: Complex GST -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   <i class="fas fa-question-circle fa-fw me-2"></i> How do you handle complex GST scenarios?
                                 </button>
                             </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p>I follow a systematic approach:</p>
+                                    <p>For complex GST situations, my approach involves:</p>
                                     <ul>
-                                        <li>Thoroughly analyze the transaction nature and applicable GST rates</li>
-                                        <li>Stay updated with latest GST notifications and amendments</li>
-                                        <li>Maintain detailed documentation for each complex transaction</li>
-                                        <li>Consult with tax experts for unique scenarios</li>
-                                        <li>Use GST compliance tools for accuracy</li>
+                                        <li><strong>Thorough Analysis:</strong> Understanding the transaction specifics, place of supply, HSN codes, and applicable rates/exemptions.</li>
+                                        <li><strong>Staying Updated:</strong> Regularly reviewing GST portal updates, CBIC notifications, and relevant case laws.</li>
+                                        <li><strong>Documentation:</strong> Maintaining detailed records and supporting documents for all complex transactions for audit trails.</li>
+                                        <li><strong>Consultation:</strong> Collaborating with senior colleagues or tax experts when facing novel or highly intricate issues.</li>
+                                        <li><strong>Technology Use:</strong> Leveraging GST software and validation tools to ensure calculation accuracy and compliance checks.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item" data-aos="fade-up">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    What's your approach to meeting tight deadlines?
+                        <!-- FAQ 2: Tight Deadlines -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-clock fa-fw me-2"></i> What's your strategy for meeting tight deadlines?
                                 </button>
                             </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p>My strategy includes:</p>
-                                    <ul>
-                                        <li>Prioritizing tasks based on deadlines and importance</li>
-                                        <li>Using automation tools for repetitive tasks</li>
-                                        <li>Maintaining a detailed calendar for compliance dates</li>
-                                        <li>Regular communication with team members</li>
-                                        <li>Having contingency plans for unexpected issues</li>
+                                    <p>Meeting deadlines effectively requires:</p>
+                                     <ul>
+                                        <li><strong>Prioritization:</strong> Using methods like the Eisenhower Matrix (Urgent/Important) to focus on critical tasks first.</li>
+                                        <li><strong>Task Breakdown:</strong> Breaking larger tasks into smaller, manageable steps with mini-deadlines.</li>
+                                        <li><strong>Time Blocking:</strong> Allocating specific time slots in my calendar for focused work on high-priority items.</li>
+                                        <li><strong>Automation:</strong> Utilizing tools and scripts (Excel, Python) to automate repetitive processes, freeing up time.</li>
+                                        <li><strong>Proactive Communication:</strong> Informing stakeholders early if potential delays arise and discussing solutions.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item" data-aos="fade-up">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    How do you ensure accuracy in financial statements?
+                         <!-- FAQ 3: Accuracy -->
+                         <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                     <i class="fas fa-check-double fa-fw me-2"></i> How do you ensure accuracy in financial reporting?
                                 </button>
                             </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p>My accuracy assurance process includes:</p>
+                                     <p>Ensuring accuracy is paramount. My methods include:</p>
                                     <ul>
-                                        <li>Multiple levels of verification and cross-checking</li>
-                                        <li>Regular reconciliation of accounts</li>
-                                        <li>Using automated validation tools</li>
-                                        <li>Following standardized accounting procedures</li>
-                                        <li>Peer review of complex calculations</li>
+                                        <li><strong>Double-Entry System Adherence:</strong> Rigorously applying double-entry principles in all bookkeeping.</li>
+                                        <li><strong>Regular Reconciliations:</strong> Performing frequent bank, vendor, and inter-account reconciliations.</li>
+                                        <li><strong>Cross-Verification:</strong> Checking data against multiple sources (e.g., invoices vs. bank statements vs. GST portal).</li>
+                                        <li><strong>Standardized Procedures:</strong> Following established checklists and accounting procedures consistently.</li>
+                                        <li><strong>Review Process:</strong> Self-reviewing work and, where possible, having critical reports peer-reviewed.</li>
+                                        <li><strong>Variance Analysis:</strong> Investigating significant deviations from budget or previous periods.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item" data-aos="fade-up">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    How do you integrate technology in accounting?
+                         <!-- FAQ 4: Tech Integration -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="250">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                     <i class="fas fa-cogs fa-fw me-2"></i> How do you integrate technology into your accounting work?
                                 </button>
                             </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p>I leverage technology through:</p>
+                                     <p>I actively integrate technology by:</p>
                                     <ul>
-                                        <li>Custom Excel macros for automation</li>
-                                        <li>Python scripts for data analysis</li>
-                                        <li>Cloud-based accounting software</li>
-                                        <li>Digital documentation systems</li>
-                                        <li>Automated reporting tools</li>
+                                        <li><strong>Automating Calculations:</strong> Using advanced Excel functions, macros, or Python scripts for complex calculations and data manipulation.</li>
+                                        <li><strong>Streamlining Reporting:</strong> Developing templates and using tools like Power BI for automated and interactive financial dashboards.</li>
+                                        <li><strong>Improving Efficiency:</strong> Creating web-based tools (like the invoice generator) or Google Sheet automations for specific tasks.</li>
+                                        <li><strong>Cloud Collaboration:</strong> Utilizing cloud accounting platforms (like Tally Cloud) for real-time data access and collaboration.</li>
+                                        <li><strong>Data Analysis:</strong> Applying Python libraries (Pandas) for deeper financial data analysis beyond standard reports.</li>
+                                        <li><strong>Digital Record Keeping:</strong> Advocating for and using digital document management systems for better organization and retrieval.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="accordion-item" data-aos="fade-up">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                    How do you handle client communication?
+                         <!-- FAQ 5: Client Communication -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                             <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="fas fa-headset fa-fw me-2"></i> What is your approach to client communication?
                                 </button>
                             </h2>
-                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p>My communication approach includes:</p>
+                                    <p>Effective client communication involves:</p>
                                     <ul>
-                                        <li>Regular updates on project status</li>
-                                        <li>Clear explanation of complex financial terms</li>
-                                        <li>Prompt response to queries</li>
-                                        <li>Scheduled review meetings</li>
-                                        <li>Detailed documentation of discussions</li>
+                                        <li><strong>Clarity:</strong> Explaining complex financial concepts in simple, understandable terms, avoiding jargon.</li>
+                                        <li><strong>Proactiveness:</strong> Providing regular updates on work progress and upcoming deadlines without waiting to be asked.</li>
+                                        <li><strong>Responsiveness:</strong> Acknowledging queries promptly and providing answers or timelines for resolution.</li>
+                                        <li><strong>Active Listening:</strong> Fully understanding client requirements, concerns, and business context before offering solutions.</li>
+                                        <li><strong>Documentation:</strong> Summarizing key discussions and decisions in writing (e.g., email follow-ups) to ensure mutual understanding.</li>
+                                        <li><strong>Preferred Channels:</strong> Using the client's preferred communication methods (email, phone, meetings) where appropriate.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -612,69 +649,105 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-light">
+    <section id="contact" class="section-padding">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="contact-info">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-info-card h-100">
+                         <h3 class="mb-4">Contact Information</h3>
+                        <p class="lead mb-4">I'm currently available for freelance opportunities and collaborations. Let's discuss how I can add value to your business!</p>
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <h3>Email</h3>
-                            <p>santubittuslg@gmail.com</p>
+                            <i class="fas fa-envelope fa-fw"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:santubittuslg@gmail.com">santubittuslg@gmail.com</a>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <h3>Phone</h3>
-                            <p>+91 8900499532</p>
+                            <i class="fas fa-phone fa-fw"></i>
+                             <div>
+                                <strong>Phone</strong><br>
+                                <a href="tel:+918900499532">+91 8900499532</a>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h3>Location</h3>
-                            <p>Ambikanagar Road No 2, Near Chot Pukur Ghat<br>Siliguri, India</p>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                             <div>
+                                <strong>Location</strong><br>
+                                Siliguri, West Bengal, India<br>(Available for remote work globally)
+                            </div>
                         </div>
+                         <div class="contact-socials mt-4">
+                            <strong>Connect Online:</strong><br>
+                             <a href="https://linkedin.com/in/santubittu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin fa-fw"></i></a>
+                             <a href="https://github.com/santubittu" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github fa-fw"></i></a>
+                             <a href="https://kaggle.com/digitalbloger" target="_blank" rel="noopener noreferrer" aria-label="Kaggle" title="Kaggle"><i class="fab fa-kaggle fa-fw"></i></a>
+                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-form-card h-100">
+                         <h3 class="mb-4">Send Me a Message</h3>
+                         <!-- novalidate prevents default browser validation, relying on JS -->
+                        <form class="contact-form needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="e.g., John Doe" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="mb-3">
+                                 <label for="contactEmail" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="e.g., john.doe@example.com" required>
+                                 <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                             <div class="mb-3">
+                                <label for="contactSubject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="contactSubject" placeholder="e.g., Project Inquiry, Collaboration" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="contactMessage" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane fa-fw"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2024 Santu Saha. All rights reserved.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/santubittu" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://quora.com/profile/Bittu-Saha-42" target="_blank"><i class="fab fa-quora"></i></a>
-                        <a href="https://santubittu.medium.com" target="_blank"><i class="fab fa-medium"></i></a>
-                    </div>
-                </div>
+            <div class="footer-social-links mb-3">
+                <a href="https://linkedin.com/in/santubittu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin fa-fw"></i></a>
+                <a href="https://github.com/santubittu" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github fa-fw"></i></a>
+                <a href="https://kaggle.com/digitalbloger" target="_blank" rel="noopener noreferrer" aria-label="Kaggle" title="Kaggle"><i class="fab fa-kaggle fa-fw"></i></a>
+                <a href="https://quora.com/profile/Bittu-Saha-42" target="_blank" rel="noopener noreferrer" aria-label="Quora" title="Quora"><i class="fab fa-quora fa-fw"></i></a>
+                <a href="https://santubittu.medium.com" target="_blank" rel="noopener noreferrer" aria-label="Medium" title="Medium"><i class="fab fa-medium fa-fw"></i></a>
             </div>
+            <p class="copyright-text mb-2">© <span id="currentYear"></span> Santu Saha. All rights reserved.</p>
+            <p class="made-with">Designed & Built with <i class="fas fa-heart fa-fw text-danger mx-1"></i> and <i class="fas fa-code fa-fw mx-1"></i></p>
         </div>
     </footer>
 
+    <!-- Scroll Top Button (Element added by script.js) -->
+    <!-- Preloader and Scroll Top Button will be added dynamically by JS -->
+
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Custom JS (Load last) -->
     <script src="script.js"></script>
+
 </body>
-</html> 
+</html>
