@@ -386,4 +386,53 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn("Element with ID 'currentYear' not found in footer.");
     }
 
+    // Animate skill bars on scroll into view
+    function animateSkillBars() {
+        document.querySelectorAll('.skill-bar-inner').forEach(function(bar) {
+            const width = bar.getAttribute('data-width');
+            if (bar.getBoundingClientRect().top < window.innerHeight - 50) {
+                bar.style.width = width;
+            }
+        });
+    }
+    window.addEventListener('scroll', animateSkillBars);
+    window.addEventListener('DOMContentLoaded', animateSkillBars);
+
+    // Dark mode toggle
+    const darkToggle = document.querySelector('.dark-mode-toggle');
+    if (darkToggle) {
+        darkToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+            this.querySelector('i').classList.toggle('fa-moon');
+            this.querySelector('i').classList.toggle('fa-sun');
+        });
+        // On load, set dark mode if previously enabled
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            darkToggle.querySelector('i').classList.remove('fa-moon');
+            darkToggle.querySelector('i').classList.add('fa-sun');
+        }
+    }
+
+    // Animated hero background gradient
+    const heroBg = document.querySelector('.hero-bg-animated');
+    if (heroBg) {
+        let angle = 0;
+        setInterval(() => {
+            angle = (angle + 1) % 360;
+            heroBg.style.background = `linear-gradient(${angle}deg, #3498db 0%, #e74c3c 100%)`;
+        }, 60);
+    }
+
+    // Sticky navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 30) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
 }); // End DOMContentLoaded
