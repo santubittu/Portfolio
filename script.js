@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 strings: [
                     'Professional Accountant',
                     'Financial Expert',
-                    'GST Specialist',
+               
                     'Web Developer',
                     'Data Analyst',
                     'Digital Marketing Enthusiast'
